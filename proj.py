@@ -20,3 +20,7 @@ while attempts > 0:
     else:
         attempts -= 1
         print('Wrong guess! Attempts left: ' + str(attempts))
+# Win condition: no underscores left
+    if '_' not in guessedWord:
+        print('\nCongratulations!! You guessed the word: ' + word)
+        break
